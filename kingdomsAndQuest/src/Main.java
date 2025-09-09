@@ -5,7 +5,7 @@ public class Main
     public static void main(String[] args)
     {
         System.out.println("Welcome");
-        System.out.println("--------------");
+        System.out.println("----------------");
         Class playerClass = new Warrior();
         PlayerCharacter player = new PlayerCharacter(0, "Henk", playerClass);
 
@@ -17,23 +17,22 @@ public class Main
         Item RustyNail = new Item("Rusty Nail Of Tetanus +1 Poison Damage");
         Quest lastQuest = new SpecialQuest(1, EndBose, RustyNail);
 
-
         player.startQuest(questOne);
         player.play();
         player.play();
-        System.out.println("--------------");
+        System.out.println("----------------");
 
         player.startQuest(lastQuest);
         player.play();
-        System.out.println("--------------");
+        System.out.println("----------------");
 
         player.startQuest(questTwo);
         player.play();
-        System.out.println("--------------");
+        System.out.println("----------------");
 
         player.startQuest(lastQuest);
         player.play();
-        System.out.println("--------------");
+        System.out.println("----------------");
 
     }
 }

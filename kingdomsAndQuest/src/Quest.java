@@ -13,7 +13,7 @@ public class Quest
 
     public int getAmountOfEPEarnedOnCompletion()
     {
-        if (difficulty == 0) {
+        if (this.difficulty == 0) {
             return 100;
         } else {
             return this.amountOfEPEarnedOnCompletion;
@@ -47,6 +47,6 @@ public class Quest
 
     public boolean canPlayerStartQuest(int totalPlayerXP)
     {
-        return ((this.difficulty * 200) <= totalPlayerXP) || difficulty == 0;
+        return ((this.difficulty * 200) <= totalPlayerXP) || this.difficulty == 0;
     }
 }
